@@ -32,8 +32,6 @@ export default function drag(sliding: DomElement, dragcall: dragcall) {
     // 滑块的父容器
     const parent = sliding.parent()
 
-    const $document = $(document)
-
     parent.on('mousedown', function (e: MouseEvent) {
         const { width, height, left, top } = parent.getBoundingClientRect()
 
@@ -51,6 +49,8 @@ export default function drag(sliding: DomElement, dragcall: dragcall) {
             y = y < 0 ? 0 : y >= height ? height : y
             dragcall.call(e.target, { x, y, w: width, h: height })
         }, 50)
+
+        const $document = $(document)
 
         // 鼠标弹起回调
         function mouseup() {

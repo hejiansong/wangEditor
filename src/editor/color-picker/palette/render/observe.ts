@@ -9,7 +9,7 @@
 
 import { colorRegex } from '../../../../utils/const'
 import Palette from '..'
-import { HSVToRGB } from '../../util/color-conversion'
+import { HSVToRGB } from '../../../../utils/color-conversion'
 import define from '../../util/define'
 
 export default function observe(palette: Palette) {

@@ -5,7 +5,7 @@
 
 import ColorPicker from '..'
 import { Data } from '../types'
-import { HEXToRGBA, HSVToRGB, RGBAToHEX, RGBToHSV } from '../util/color-conversion'
+import { HEXToRGBA, HSVToRGB, RGBAToHEX, RGBToHSV } from '../../../utils/color-conversion'
 import $, { DomElement } from './../../../utils/dom-core'
 import { hexRegex, rgbRegex } from '../../../utils/const'
 import observe from './render/observe'
